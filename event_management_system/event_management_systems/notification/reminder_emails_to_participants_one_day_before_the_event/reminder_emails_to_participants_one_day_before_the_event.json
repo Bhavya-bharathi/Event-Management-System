@@ -1,0 +1,33 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.days_before == 1",
+ "creation": "2025-01-29 06:24:56.044965",
+ "date_changed": "event_start_date",
+ "days_in_advance": 2,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Participants List",
+ "enabled": 0,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Event You are registered starts from tommorrow",
+ "modified": "2025-01-31 09:31:18.242220",
+ "modified_by": "Administrator",
+ "module": "Event Management Systems",
+ "name": "Reminder emails to participants one day before the event",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner",
+   "receiver_by_role": "Event Customer"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "sender": "customer",
+ "sender_email": "bhavya2akkala@gmail.com",
+ "subject": "{{ doc.name }}",
+ "value_changed": "days_before"
+}

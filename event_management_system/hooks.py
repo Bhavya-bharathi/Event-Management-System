@@ -115,6 +115,11 @@ app_license = "MIT"
 # Document Events
 # ---------------
 # Hook on document methods and events
+# doctype_js = {
+#     "Participants List": "public/js/participants_list.js"
+# }
+
+
 
 # doc_events = {
 # 	"*": {
@@ -128,11 +133,11 @@ app_license = "MIT"
 # ---------------
 
 # scheduler_events = {
-# 	"all": [
-# 		"event_management_system.tasks.all"
-# 	],
+# # 	"all": [
+# # 		"event_management_system.tasks.all"
+# # 	],
 # 	"daily": [
-# 		"event_management_system.tasks.daily"
+# 		 "evnet_management_syatem.event_management_systems.notification.reminder_emails_to_participants_one_day_before_the_event.py.send_notification_email."
 # 	],
 # 	"hourly": [
 # 		"event_management_system.tasks.hourly"
@@ -142,8 +147,24 @@ app_license = "MIT"
 # 	],
 # 	"monthly": [
 # 		"event_management_system.tasks.monthly"
-# 	],
+	# ],
 # }
+scheduler_events = {
+    "daily": [
+        "event_management_system.tasks.send_event_notifications",
+        "event_management_system.tasks1.send_certificate_email"
+    ]
+}
+
+
+
+
+# hooks.py
+# my_app/hooks.py
+
+
+
+
 
 # Testing
 # -------

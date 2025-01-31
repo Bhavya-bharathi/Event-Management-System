@@ -1,0 +1,31 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.status == \"Registration confirmed\"",
+ "creation": "2025-01-28 07:41:11.486854",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Participants List",
+ "enabled": 1,
+ "event": "Save",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Registration conformed",
+ "modified": "2025-01-28 07:41:11.486854",
+ "modified_by": "Administrator",
+ "module": "Event Management Systems",
+ "name": "Registration confirmation emails to participants",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner",
+   "receiver_by_role": "Event Customer"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "sender": "customer",
+ "sender_email": "bhavya2akkala@gmail.com",
+ "subject": "{{doc. registration_status}}"
+}

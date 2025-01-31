@@ -1,0 +1,31 @@
+{
+ "cards": [
+  {
+   "card": "Total number of events"
+  },
+  {
+   "card": "Registered participants"
+  }
+ ],
+ "charts": [
+  {
+   "width": "Half"
+  },
+  {
+   "chart": "Upcoming events for the next 7 days",
+   "width": "Half"
+  }
+ ],
+ "creation": "2025-01-22 12:30:07.179913",
+ "dashboard_name": "Event Management System Dashboards",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2025-01-23 20:27:42.404630",
+ "modified_by": "Administrator",
+ "module": "Event Management Systems",
+ "name": "Event Management System Dashboards",
+ "owner": "Administrator"
+}

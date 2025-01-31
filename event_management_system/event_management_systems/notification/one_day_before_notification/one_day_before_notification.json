@@ -1,0 +1,32 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.days_before == 1",
+ "creation": "2025-01-31 09:34:35.552146",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Participants List",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Remainder {{ doc.name }} email",
+ "modified": "2025-01-31 09:40:06.095892",
+ "modified_by": "Administrator",
+ "module": "Event Management Systems",
+ "name": "One Day before Notification",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner",
+   "receiver_by_role": "Event Customer"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "sender": "customer",
+ "sender_email": "bhavya2akkala@gmail.com",
+ "subject": "{{ doc.name }} Remainder",
+ "value_changed": "days_before"
+}

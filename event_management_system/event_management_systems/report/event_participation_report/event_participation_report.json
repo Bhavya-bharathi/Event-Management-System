@@ -1,0 +1,23 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2025-01-21 08:32:34.190246",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2025-01-21 09:40:38.473390",
+ "modified_by": "Administrator",
+ "module": "Event Management Systems",
+ "name": "Event Participation Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT \n    parent_table.name AS \"Event ID\",\n    parent_table.event AS \"Event\",\n    parent_table.event_type AS \"Event Type\",\n    child_table.participant_name AS \"Participant Name\",\n    child_table.enrollment_number AS \"Enrollment Number\"\nFROM \n    `tabEvent Details` AS parent_table\nLEFT JOIN \n    `tabParticipants` AS child_table\nON \n    parent_table.name = child_table.parent\nWHERE \n    parent_table.docstatus < 2\n    AND parent_table.name = %(event)s\nORDER BY \n    parent_table.event_date DESC;",
+ "ref_doctype": "Event Details",
+ "report_name": "Event Participation Report",
+ "report_type": "Script Report",
+ "roles": []
+}

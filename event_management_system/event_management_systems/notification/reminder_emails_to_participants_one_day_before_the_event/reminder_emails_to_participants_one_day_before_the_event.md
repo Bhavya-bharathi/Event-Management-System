@@ -1,0 +1,1 @@
+Event You are registered starts from tommorrow
